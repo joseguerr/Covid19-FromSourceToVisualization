@@ -39,6 +39,8 @@
 	The first transformation is basicaly a Lookup table (dim) for the countries and respective atributes.
 	FILTER by 'Europe' and country code not null
 	
+	<img width=“964” alt=“cases and deaths dataflow” src=“https://github.com/joseguerr/Covid19-FromSourceToVisualization/blob/main/snapshots/dataflow%20death%20cases.png 100”>
+	
 	
 ### TRANSFORMATION 2 IN DATAFLOW:
 	Create a dim date with date_key, date, year, day_name, day_of_year, week_of_month, week_of_year, month_name, year_month, year_week
