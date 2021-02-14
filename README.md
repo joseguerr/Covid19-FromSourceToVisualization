@@ -39,7 +39,7 @@
 	The first transformation is basicaly a Lookup table (dim) for the countries and respective atributes.
 	FILTER by 'Europe' and country code not null
 	
-	<img width=“964” alt=“cases and deaths dataflow” src=“https://github.com/joseguerr/Covid19-FromSourceToVisualization/blob/main/snapshots/dataflow%20death%20cases.png 100”>
+	<img src=“https://github.com/joseguerr/Covid19-FromSourceToVisualization/blob/main/snapshots/dataflow%20death%20cases.png" width=“964” height="auto">
 	
 	
 ### TRANSFORMATION 2 IN DATAFLOW:
