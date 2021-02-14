@@ -2,35 +2,35 @@
 
 
 ### GOAL: 
-	set up the data structure to help Data Scientists and Data Analysts important insights related to Covid-19. Data sources comes from european 
-	institutions (ECDC and Eurostat).
-	Information includes confirmed cases (daily basis), Mortality (daily basis), Hospitalization/ ICU Cases (per week and at the end of the day),
-	Testing numbers, Number for every country's population by age group.
-	Predict the raise in cases and mortality rate
+set up the data structure to help Data Scientists and Data Analysts important insights related to Covid-19. Data sources comes from european 
+institutions (ECDC and Eurostat).
+Information includes confirmed cases (daily basis), Mortality (daily basis), Hospitalization/ ICU Cases (per week and at the end of the day),
+Testing numbers, Number for every country's population by age group.
+Predict the raise in cases and mortality rate
 	
 ### Analysed Data: 
-	Covid-19 new cases and deaths by country (ECDC)
-	Covid-19 Hospital admissions & ICU cases (ECDC)
-	Covid-19 Testing numbers (ECDC)
-	Country Response to Covid-19 (lockdowns or other type of measures) (ECDC)
-	Country population by age (EuroStat)
+Covid-19 new cases and deaths by country (ECDC)
+Covid-19 Hospital admissions & ICU cases (ECDC)
+Covid-19 Testing numbers (ECDC)
+Country Response to Covid-19 (lockdowns or other type of measures) (ECDC)
+Country population by age (EuroStat)
 	  
 
 ### END-TO-END DATAFLOW:
-	ingestion of data is made through the http and azure blob connector to ADF and then stored in azure data lake.
-	Transformation is done in ADF through dataflow, hdinshight and databricks and storage in SQL database (for publishing) or data lake for ML models
+Ingestion of data is made through the http and azure blob connector to ADF and then stored in azure data lake.
+Transformation is done in ADF through dataflow, hdinshight and databricks and storage in SQL database (for publishing) or data lake for ML models
 	
 ### CONSIDERATIONS:
-	Structure of the data
-	Operational needs - how frequently is the data accessed, how quickly we need to serve it, simple or complex queries, access from multiple regions
-	Database Requirements
-	Storage Requirements
+Structure of the data
+Operational needs - how frequently is the data accessed, how quickly we need to serve it, simple or complex queries, access from multiple regions
+Database Requirements
+Storage Requirements
 	  
 -------------------------------------//-------------------------------------------------------------------	  
 	  
 ### DATA INGESTION 
-  The population by age data set is ingested from Azure blob storage (copy activity)
-  The remain are done through HTTP connection
+ The population by age data set is ingested from Azure blob storage (copy activity)
+ The remain are done through HTTP connection
 	
 ### TRANSFORMATION 1 IN DATAFLOW:
 	
