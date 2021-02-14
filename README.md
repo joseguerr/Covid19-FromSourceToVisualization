@@ -32,8 +32,10 @@ Storage Requirements
 -------------------------------------//-------------------------------------------------------------------	  
 	  
 ### DATA INGESTION 
- The population by age data set is ingested from Azure blob storage (copy activity)
- The remain are done through HTTP connection
+The population by age data set is ingested from Azure blob storage (copy activity)
+The remain are done through HTTP connection
+ 
+<img src="./snapshots/pipeline%20ingest%20ecdc%20data.png">
 	
 ### TRANSFORMATION 1 IN DATAFLOW:
 	
@@ -61,7 +63,7 @@ Because of this, it is always better to create a separate folder to accomodate a
 
 ### TRANSFORMATION 3 IN DATAFLOW:
 drop the columns until 2019 from population_by_age file
-also, in other files we have country, country_code, etc. There for we separate the first column into two, the first called age_group and the other
+also, in other files we have country, country_code, etc. Therefore we separate the first column into two, the first called age_group and the other
 called country_code. we can then perform a look up on dim_country.
 the third step is to pivot the table in order to have all the data from one country in one row with columns for the different age groups
 	
