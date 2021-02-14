@@ -14,6 +14,9 @@ Covid-19 Hospital admissions & ICU cases (ECDC)
 Covid-19 Testing numbers (ECDC)
 Country Response to Covid-19 (lockdowns or other type of measures) (ECDC)
 Country population by age (EuroStat)
+
+### Architecture
+<img src="./snapshots/architecture.png">
 	  
 
 ### END-TO-END DATAFLOW:
