@@ -54,6 +54,8 @@ For the join transformation we can use inner join because for every week coming 
 when you create the sink in data flow, the data is run in a spark cluster which means data our result will be distrubited through different files.
 Because of this, it is always better to create a separate folder to accomodate all the files.
 
+<img src="./snapshots/dataflow%20hospitality.png">
+
 ### TRANSFORMATION 3 IN DATAFLOW:
 drop the columns until 2019 from population_by_age file
 also, in other files we have country, country_code, etc. There for we separate the first column into two, the first called age_group and the other
