@@ -78,3 +78,7 @@ Created a diagnostic setting under the monitor blade to log activity, pipiline a
   
   
 ### End User Visuals
+
+<img src="./snapshots/power%20bi%20europe%20trend.png">
+
+<img src="./snapshots/power%20bi%20countries%20trend.png">
